@@ -1,4 +1,3 @@
-//use nodejs on this file
 /*
 This is a simple lisp-like interpreter implemented in nodejs
 
@@ -12,6 +11,15 @@ var index;
 
 input = process.argv;
 operator = input[2];
+for (index = 3; index < input.length; index++) 
+{
+	if input[index] == ("3")
+		console.log("That's an operator!");
+	else
+	{
+		console.log("NONONO");
+	}
+};
 if ((operator == "+") || (operator == "add"))
 {
 	total = 0;
@@ -48,6 +56,19 @@ else if ((operator == "/") || (operator == "divide"))
 	}
 	console.log(total);
 }
+else if((operator == "average") || (operator == "avg"))
+{
+	total = 0;
+	for (index = 3; index < input.length; index++)
+	{
+		total += Number(input[index])
+	}
+	var average;
+	average = total/(input.length - 3)
+	console.log(average);
+}
+
+
 else
 {
 	console.log("Didn't understand operator!");
