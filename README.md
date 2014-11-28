@@ -18,7 +18,7 @@ divide or /
 
 use like this:
 
-+ 3 1 5 2 6 
+\+ 3 1 5 2 6 
 
 This will add all the numbers together
 
